@@ -92,3 +92,13 @@ movevavg_len = st.slider(
     'Select the number of days for Moving Averages', min_value=0, max_value=250, value=50)
 moveavg_oc = df_select[['Open', 'Close']].rolling(50).mean()
 st.line_chart(moveavg_oc)
+
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
