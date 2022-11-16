@@ -4,18 +4,12 @@
 
 ## Run the app
 ```Powershell
-# vanilla terminal
+# terminal
 streamlit run app.py
 
 # quit
 ctrl-c
 ```
-
-## Demo
-
-## Screenshot
-
-
 
 ## Author
 
