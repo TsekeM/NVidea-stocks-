@@ -7,7 +7,6 @@ import datetime
 df = pd.read_csv('NVidia_stock_history.csv')
 
 # Delete rows where the date is before 1/1/2019
-
 df['Date'] = pd.to_datetime(df['Date'])
 df = df[~(df['Date'] < '2019-01-01')]
 df.head()
